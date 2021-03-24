@@ -20,11 +20,6 @@ class CheckClass(object):
 
 class FieldsCheck(CheckClass):
     fix_database = dict(
-        ru_captcha_key="",
-        delete_all_notify=False,
-        role_play_commands=[],
-        ignored_members=[],
-        ignored_global_members=[],
         auto_exit_from_chat=False,
         auto_exit_from_chat_delete_chat=False,
         auto_exit_from_chat_add_to_black_list=False,
@@ -32,7 +27,6 @@ class FieldsCheck(CheckClass):
         disable_notifications=False,
         repeater_word="..",
         repeater_active=False,
-        trusted=[]
     )
 
     def check(self):
